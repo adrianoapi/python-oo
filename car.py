@@ -1,5 +1,7 @@
 class Car:
     
+    rodas = 4
+    
     def __init__(self, name):
         #self.color = color
         #self.year = year
@@ -11,4 +13,8 @@ class Car:
     
     @staticmethod
     def hello():
-        print('Hello world!');
+        print('Hello world!')
+
+    @classmethod
+    def show(cls):
+        print(cls.rodas)
